@@ -9,7 +9,7 @@ export function renderAddPostPageComponent({ appEl, onAddPostClick }) {
     <div class="page-container">
       <div class="header-container"></div>
       <div class="form">
-        <h3 class="form-title">Новый пост</h3>
+        <h3 class="form-title">Создать свой новый пост</h3>
         <div class="form-inputs">
           <div class="upload-image-container">
             <div class="upload=image">      

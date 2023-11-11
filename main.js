@@ -24,7 +24,16 @@ export const setPosts = (newPosts) => {
   posts = newPosts;
 }
 
+export const getToken = () => {
+  const token = user ? `Bearer ${user.token}` : undefined;
+  return token;
+};
 
+export const logout = () => {
+  user = null;
+  removeUserFromLocalStorage();
+  goToPage(POSTS_PAGE);
+};
 
 export const goToPage = (newPage, data) => {
   if (
@@ -80,7 +89,6 @@ export const goToPage = (newPage, data) => {
 
   throw new Error("страницы не существует");
 };
-
 
 export const renderApp = () => {
   const appEl = document.getElementById("app");
