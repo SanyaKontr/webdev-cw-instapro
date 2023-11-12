@@ -1,5 +1,10 @@
 .page-container {
   padding: 0 20px;
+  background-image: url(wave.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .page-header {
@@ -44,6 +49,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .post-header {
@@ -52,6 +58,7 @@
   align-items: center;
   margin-bottom: 10px;
   cursor: pointer;
+  
 }
 
 .post-header__user-image {
@@ -68,7 +75,7 @@
   height: 500px;
   display: flex;
   justify-content: center;
-  background-color: #e0e0e0;
+  background-color: #fcd48c;
 }
 
 .post-image {
